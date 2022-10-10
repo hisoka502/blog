@@ -8,14 +8,14 @@
       
       
       
-        <link rel="canonical" href="https://kuoyihs.in/notes/test/">
+        <link rel="canonical" href="https://kuoyihs.in/notes/202210102106/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.0, mkdocs-material-8.5.6">
     
     
       
-        <title>Notes - 郭奕信 Kuo Yi Hsin</title>
+        <title>用 prototype 避開局部最佳解 - 郭奕信 Kuo Yi Hsin</title>
       
     
     
@@ -67,6 +67,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#用-prototype-避開局部最佳解" class="md-skip">
+          跳轉到
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -96,7 +101,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Notes
+              用 prototype 避開局部最佳解
             
           </span>
         </div>
@@ -633,6 +638,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -647,12 +654,68 @@
                   
   
 
+  <nav class="md-tags" >
+    
+      
+      
+        <a href="../../tags/#使用者訪談" class="md-tag">使用者訪談</a>
+      
+    
+      
+      
+        <a href="../../tags/#情境與脈絡" class="md-tag">情境與脈絡</a>
+      
+    
+      
+      
+        <a href="../../tags/#使用者需求" class="md-tag">使用者需求</a>
+      
+    
+      
+      
+        <a href="../../tags/#產品開發" class="md-tag">產品開發</a>
+      
+    
+      
+      
+        <a href="../../tags/#prototype" class="md-tag">prototype</a>
+      
+    
+      
+      
+        <a href="../../tags/#基因演算法" class="md-tag">基因演算法</a>
+      
+    
+      
+      
+        <a href="../../tags/#降低失敗風險" class="md-tag">降低失敗風險</a>
+      
+    
+      
+      
+        <a href="../../tags/#系統思考" class="md-tag">系統思考</a>
+      
+    
+  </nav>
 
 
 
-  <h1>Notes</h1>
 
-
+<h1 id="用-prototype-避開局部最佳解">用 prototype 避開局部最佳解<a class="headerlink" href="#用-prototype-避開局部最佳解" title="Permanent link">&para;</a></h1>
+<p>產品開發初期，通常使用者情境和需求都還不夠明朗，這種前提下進行的 prototype 測試最好把目的放在「透過 prototype 釐清問題」，才能避免只找到局部最佳解。</p>
+<p>「意義在比較之中產生。」</p>
+<p>我在 Curcuit Breaker 這集的 <a href="https://podcasts.apple.com/dk/podcast/15-understanding-prototyping-to-learn/id1617350970?i=1000568844213" target="_blank">Podcast</a> 裡學到一個簡單可行的作法：在測試過程同時提供截然不同的數款 prototype 給使用者。當人們遇到有多個選項時，就可以比較明確的指出「這個比較好，那個比較不好，因為......」，讓我們不只得到使用者情境的情報，也同時釐清哪個設計提案有繼續發展的價值，提高命中全域最佳解的機率。</p>
+<p>如果使用者一次只面對一款 prototype 提案，就容易落入過度關注提案本身好壞的隧道視野， 我們沒有辦法透過訪談挖掘需求和情境的真實原貌。更糟的是如果不小心得到使用者的正面回饋，我們就很有可能基於這個 prototype 繼續發展下去。但沒經過發散再收斂的過程，通常就只會得到局部最佳解。</p>
+<p>在讀完 David Rutten<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> <a href="https://www.google.com/search?q=david+rutten+problem+solving&amp;oq=david+rutten+problem+solving&amp;aqs=chrome..69i57.20181j0j4&amp;sourceid=chrome&amp;ie=UTF-8">寫給設計師看的基因演算法介紹</a>後，我發現這種 prototype 測試過程其實和基因演算法的邏輯蠻相似的；如果基因組之間差異性極小，那麼很快就會得到趨近於極值的結果，如果基因組之間有一定的變異性，就有非常多可能性。差就差在使用者情境往往是複雜多變、難以量化的，也就不太可能只靠基因演算法就找到解答。</p>
+<p><img alt="blog/docs/images/prototype-optimum.png" src="../blog/docs/images/prototype-optimum.png" /></p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p><a href="https://www.rhino3d.com/" target="_blank">Rhino</a> 內建視覺化程式語言 <a href="https://www.grasshopper3d.com/" target="_blank">Grasshopper</a> 的主要開發者&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
 
 
 
