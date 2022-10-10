@@ -174,7 +174,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="./" class="md-tabs__link md-tabs__link--active">
+    <a href="../" class="md-tabs__link md-tabs__link--active">
       Notes
     </a>
   </li>
@@ -327,8 +327,8 @@
       
         
         
-        <div class="md-nav__link md-nav__link--index md-nav__link--active">
-          <a href="./">Notes</a>
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../">Notes</a>
           
             <label for="__nav_3">
               <span class="md-nav__icon md-icon"></span>
@@ -342,6 +342,28 @@
           Notes
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        用 prototype 避開局部最佳解
+      </a>
+      
+    </li>
+  
+
+            
           
             
               
@@ -694,14 +716,14 @@
 
 
 
-  <h1>Notes</h1>
+  <h1>用 prototype 避開局部最佳解</h1>
 
 <p>產品開發初期，通常使用者情境和需求都還不夠明朗，這種前提下進行的 prototype 測試最好把目的放在「透過 prototype 釐清問題」，才能避免只找到局部最佳解。</p>
 <p>「意義在比較之中產生。」</p>
 <p>我在 Circuit Breaker 這集的 <a href="https://podcasts.apple.com/dk/podcast/15-understanding-prototyping-to-learn/id1617350970?i=1000568844213" target="_blank">Podcast</a> 裡學到一個簡單可行的作法：在測試過程同時提供截然不同的數款 prototype 給使用者。當人們遇到有多個選項時，就可以比較明確的指出「這個比較好，那個比較不好，因為......」，讓我們不只得到使用者情境的情報，也同時釐清哪個設計提案有繼續發展的價值，提高命中全域最佳解的機率。</p>
 <p>如果使用者一次只面對一款 prototype 提案，就容易落入過度關注提案本身好壞的隧道視野， 我們沒有辦法透過訪談挖掘需求和情境的真實原貌。更糟的是如果不小心得到使用者的正面回饋，我們就很有可能基於這個 prototype 繼續發展下去。但沒經過發散再收斂的過程，通常就只會得到局部最佳解。</p>
 <p>在讀完 David Rutten<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> <a href="https://www.grasshopper3d.com/profiles/blogs/evolutionary-principles" target="_blank">寫給設計師看的基因演算法介紹</a>後，我發現這種 prototype 測試過程其實和基因演算法的邏輯蠻相似的；如果基因組之間差異性極小，那麼很快就會得到趨近於極值的結果，如果基因組之間有一定的變異性，就有非常多可能性。差就差在使用者情境往往是複雜多變、難以量化的，也就不太可能只靠基因演算法就找到解答。</p>
-<p><img alt="blog/docs/images/prototype-optimum.png" src="../blog/docs/images/prototype-optimum.png" /></p>
+<p><img alt="prototype-optimum.png" src="../../images/prototype-optimum.png" /></p>
 <div class="footnote">
 <hr />
 <ol>
@@ -730,7 +752,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../../essays/practice-speaking-with-snipd/" class="md-footer__link md-footer__link--prev" aria-label="上一頁: 最適合練英文口說的 Podcast 播放器" rel="prev">
+        <a href="../" class="md-footer__link md-footer__link--prev" aria-label="上一頁: Notes" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -739,7 +761,7 @@
               <span class="md-footer__direction">
                 上一頁
               </span>
-              最適合練英文口說的 Podcast 播放器
+              Notes
             </div>
           </div>
         </a>
