@@ -8,20 +8,20 @@
       
       
       
-        <link rel="canonical" href="https://kuoyihs.in/notes/202210102106/">
+        <link rel="canonical" href="https://kuoyihs.in/notes/202303070906/">
       
       
-        <link rel="prev" href="../202212042122/">
+        <link rel="prev" href="../">
       
       
-        <link rel="next" href="../202209302111/">
+        <link rel="next" href="../202212042122/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.3">
     
     
       
-        <title>用 prototype 避開局部最佳解 - 郭奕信 Kuo Yi Hsin</title>
+        <title>看起來混亂隨便的設計草圖，才是最難被 AI 模仿的 - 郭奕信 Kuo Yi Hsin</title>
       
     
     
@@ -72,6 +72,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#看起來混亂隨便的設計草圖才是最難被-ai-模仿的" class="md-skip">
+          跳轉到
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -101,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              用 prototype 避開局部最佳解
+              看起來混亂隨便的設計草圖，才是最難被 AI 模仿的
             
           </span>
         </div>
@@ -352,11 +357,21 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../202303070906/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         看起來混亂隨便的設計草圖，才是最難被 AI 模仿的
       </a>
+      
     </li>
   
 
@@ -380,19 +395,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../202210102106/" class="md-nav__link">
         用 prototype 避開局部最佳解
       </a>
-      
     </li>
   
 
@@ -702,6 +709,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -720,7 +729,12 @@
     
       
       
-        <a href="../../tags/#使用者訪談" class="md-tag">使用者訪談</a>
+        <a href="../../tags/#產品設計" class="md-tag">產品設計</a>
+      
+    
+      
+      
+        <a href="../../tags/#ai" class="md-tag">AI</a>
       
     
       
@@ -730,22 +744,12 @@
     
       
       
-        <a href="../../tags/#使用者需求" class="md-tag">使用者需求</a>
+        <a href="../../tags/#造型設計" class="md-tag">造型設計</a>
       
     
       
       
-        <a href="../../tags/#產品開發" class="md-tag">產品開發</a>
-      
-    
-      
-      
-        <a href="../../tags/#基因演算法" class="md-tag">基因演算法</a>
-      
-    
-      
-      
-        <a href="../../tags/#系統思考" class="md-tag">系統思考</a>
+        <a href="../../tags/#設計思考" class="md-tag">設計思考</a>
       
     
   </nav>
@@ -753,22 +757,12 @@
 
 
 
-  <h1>用 prototype 避開局部最佳解</h1>
-
-<p>產品開發初期，通常使用者情境和需求都還不夠明朗，這種前提下進行的 prototype 測試最好把目的放在「透過 prototype 釐清問題」，才能避免只找到局部最佳解。</p>
-<p>「意義在比較之中產生。」</p>
-<p>我在 Circuit Breaker 這集的 <a href="https://podcasts.apple.com/dk/podcast/15-understanding-prototyping-to-learn/id1617350970?i=1000568844213" target="_blank">Podcast</a> 裡學到一個簡單可行的作法：在測試過程同時提供截然不同的數款 prototype 給使用者。當人們遇到有多個選項時，就可以比較明確的指出「這個比較好，那個比較不好，因為......」，讓我們不只得到使用者情境的情報，也同時釐清哪個設計提案有繼續發展的價值，提高命中全域最佳解的機率。</p>
-<p>如果使用者一次只面對一款 prototype 提案，就容易落入過度關注提案本身好壞的隧道視野， 我們沒有辦法透過訪談挖掘需求和情境的真實原貌。更糟的是如果不小心得到使用者的正面回饋，我們就很有可能基於這個 prototype 繼續發展下去。但沒經過發散再收斂的過程，通常就只會得到局部最佳解。</p>
-<p>在讀完 David Rutten<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> <a href="https://www.grasshopper3d.com/profiles/blogs/evolutionary-principles" target="_blank">寫給設計師看的基因演算法介紹</a>後，我發現這種 prototype 測試過程其實和基因演算法的邏輯蠻相似的；如果基因組之間差異性極小，那麼很快就會得到趨近於極值的結果，如果基因組之間有一定的變異性，就有非常多可能性。差就差在使用者情境往往是複雜多變、難以量化的，也就不太可能只靠基因演算法就找到解答。</p>
-<p><img alt="prototype-optimum.png" src="../../images/prototype-optimum.png" /></p>
-<div class="footnote">
-<hr />
-<ol>
-<li id="fn:1">
-<p><a href="https://www.rhino3d.com/" target="_blank">Rhino</a> 內建視覺化程式語言 <a href="https://www.grasshopper3d.com/" target="_blank">Grasshopper</a> 的主要開發者&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
-</li>
-</ol>
-</div>
+<h1 id="看起來混亂隨便的設計草圖才是最難被-ai-模仿的">看起來混亂隨便的設計草圖，才是最難被 AI 模仿的<a class="headerlink" href="#看起來混亂隨便的設計草圖才是最難被-ai-模仿的" title="Permanent link">&para;</a></h1>
+<p>設計發想的階段，是一種從混沌的原始素材中，探索出要解決的問題，並將其用相關情境圖象化的過程。這個過程如果經由設計師的筆圖像化後，看起來就會是一團沒人看得懂的混亂，附註一些沒有條理的的語句。</p>
+<p>例如，當設計師在思考「如何讓使用者能在家裡吃到好吃的烤吐司」時，設計發想畫的不會是考吐司機、烤箱、卡式爐......或任何你想得到的產品。而是如何加熱、使用者在做什麼、環境會是怎樣。</p>
+<p>所以說，這些圖的目的不是在描繪物體型態（form），而是周遭情境（context）。但 AI 少了同理心去理解使用者的思考歷程、情緒起伏、操作方式，使得它無法用圖像表達使用者身處的環境、遇到的困境與挫折。因此再會模仿各種畫風的 AI，在前期的設計思考中都無濟於事。 </p>
+<p>不過當我們把前期問題思考透徹，進入型態發展的階段後，就是導入 AI 的好時機。AI 可以在我們有了粗略的型態輪廓後，進行各項迭代與變體產生出無限可能性。</p>
+<p>這樣是否表示設計師不再需要造形能力了呢？我並不這樣認為，反而覺得具備造型能力的設計師會更具優勢。過去因為 CAD 和電繪工具的進步，設計師可以透過產品渲染技巧，掩蓋基本造型能力的匱乏，但當未來每個設計師都擁有表現技法超強的 AI 美工在背後幫忙時，誰產出的圖比較美，基本上已經沒有意義。能專注於最基本的造型原理、美學素養的設計師才能勝出（或者說，生存？），設計師具備的美感與視覺鑑別力，才能善用 AI 貫徹創作理念，而不是受限於形式上的局限性。</p>
 
 
 
